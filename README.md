@@ -17,7 +17,7 @@ carry through every later step.
 | `steer2edit/aime_2022_2024_60q/` | AIME, first 60 of a frozen random order of 2022-2024, seed 64 |
 
 Each `.jsonl.gz` has one JSON record per run, including the generated `text`, `prediction`, `gold` and `correct`.
-Token ID lists were removed to save space. `runs.csv` has 3,958 runs. `uid` identifies a run.
+Token ID lists were removed to save space. `runs.csv` has 4,302 runs. `uid` identifies a run.
 
 `tokens` in the CSVs means `n_gen` for CREST and `reasoning_length` for Steer2Edit, the length metric used in each
 project's readout.
@@ -68,9 +68,9 @@ Vanilla: 99 / 4,850.
 | 0.50 | not run | 57 / 4,603 | |
 | 0.55 | 34 / 3,384 | 83 / 3,670 | |
 | 0.60 | 67 / 3,028 | 91 / 3,349 | |
-| 0.65 | 80 / 2,782 | 91 / 2,993 | not included |
-| 0.70 | 89 / 2,973 | 92 / 3,069 | not included |
-| 0.75 | 91 / 2,918 | 92 / 3,504 | not included |
+| 0.65 | 80 / 2,782 | 91 / 2,993 | 92 / 3,015 |
+| 0.70 | 89 / 2,973 | 92 / 3,069 | 90 / 3,483 |
+| 0.75 | 91 / 2,918 | 92 / 3,504 | 92 / 3,157 |
 | 0.80 | 92 / 3,107 | 98 / 3,410 | 97 / 3,215 |
 | 1.00 | 96 / 3,439 | not run | |
 
@@ -83,21 +83,12 @@ Vanilla: 99 / 4,850.
 
 Vanilla: 45 / 20,450 / 10.
 
-| rho, alpha 0.05 | `edit` | `edit_re` |
-|---:|---:|---:|
-| 0.65 | | 20 / 15,928 / 4 (58 problems) |
-| 0.70 | 18 / 14,008 / 2 | |
-| 0.80 | 30 / 18,124 / 7 | 34 / 17,854 / 8 |
-| 1.00 | 40 / 18,557 / 11 | 42 / 18,987 / 10 |
-
-`edit_ent` at rho 1.00 is partial here: 16 of 60 problems, 12 correct. These are not comparable with the 60-problem rows.
-
-## Not included yet
-
-These ran on another cluster, so their files are not in this repo:
-
-- AIME `edit_ent` rho 1.00, remaining 44 problems. Reported as 46/60 at about 18,200 tokens; not checked against run files here.
-- MATH-500 `edit_ent` at rho 0.65, 0.70 and 0.75.
+| rho, alpha 0.05 | `edit` | `edit_re` | `edit_ent` |
+|---:|---:|---:|---:|
+| 0.65 | | 20 / 15,928 / 4 (58 problems) | |
+| 0.70 | 18 / 14,008 / 2 | | |
+| 0.80 | 30 / 18,124 / 7 | 34 / 17,854 / 8 | |
+| 1.00 | 40 / 18,557 / 11 | 42 / 18,987 / 10 | 46 / 18,328 / 6 |
 
 ## Notes
 

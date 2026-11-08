@@ -1703,22 +1703,66 @@ steer2edit,aime_2022_2024_60q,edit,r1.00_a0.05,64,85,aime|edit|85|r1.00_a0.05|s6
 steer2edit,aime_2022_2024_60q,edit,r1.00_a0.05,64,86,aime|edit|86|r1.00_a0.05|s64,True,11011,True,0,55,55
 steer2edit,aime_2022_2024_60q,edit,r1.00_a0.05,64,87,aime|edit|87|r1.00_a0.05|s64,False,32767,False,0,6,699
 steer2edit,aime_2022_2024_60q,edit,r1.00_a0.05,64,88,aime|edit|88|r1.00_a0.05|s64,False,1282,True,0,2,127
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,0,aime|edit_ent|0|r1.00_a0.05|s64,True,3716,True,50,116,116
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,1,aime|edit_ent|1|r1.00_a0.05|s64,True,10864,True,142,756,756
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,2,aime|edit_ent|2|r1.00_a0.05|s64,True,18103,True,346,150,150
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,3,aime|edit_ent|3|r1.00_a0.05|s64,True,19403,True,243,245,245
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,5,aime|edit_ent|5|r1.00_a0.05|s64,True,21424,True,506,459,459
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,8,aime|edit_ent|8|r1.00_a0.05|s64,True,13166,True,168,242,242
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,10,aime|edit_ent|10|r1.00_a0.05|s64,True,9356,True,158,550,550
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,11,aime|edit_ent|11|r1.00_a0.05|s64,True,30947,True,511,228,228
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,13,aime|edit_ent|13|r1.00_a0.05|s64,True,30468,True,492,378,378
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,14,aime|edit_ent|14|r1.00_a0.05|s64,True,9431,True,168,247,247
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,15,aime|edit_ent|15|r1.00_a0.05|s64,True,10634,True,113,154,154
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,17,aime|edit_ent|17|r1.00_a0.05|s64,False,32764,False,735,1,180
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,18,aime|edit_ent|18|r1.00_a0.05|s64,False,32766,False,625,2,23
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,19,aime|edit_ent|19|r1.00_a0.05|s64,True,27748,True,530,220,220
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,22,aime|edit_ent|22|r1.00_a0.05|s64,True,20136,True,335,125,125
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,23,aime|edit_ent|23|r1.00_a0.05|s64,True,3682,True,58,21,21
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,25,aime|edit_ent|25|r1.00_a0.05|s64,True,21790,True,264,72,72
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,26,aime|edit_ent|26|r1.00_a0.05|s64,True,29576,True,592,841,841
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,27,aime|edit_ent|27|r1.00_a0.05|s64,True,9305,True,145,192,192
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,28,aime|edit_ent|28|r1.00_a0.05|s64,True,32664,True,469,80,80
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,29,aime|edit_ent|29|r1.00_a0.05|s64,False,1137,True,2,1,244
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,31,aime|edit_ent|31|r1.00_a0.05|s64,True,18086,True,258,944,944
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,32,aime|edit_ent|32|r1.00_a0.05|s64,True,16414,True,261,235,235
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,33,aime|edit_ent|33|r1.00_a0.05|s64,True,10931,True,178,75,75
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,34,aime|edit_ent|34|r1.00_a0.05|s64,True,18907,True,302,125,125
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,35,aime|edit_ent|35|r1.00_a0.05|s64,False,31774,True,517,2,608
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,36,aime|edit_ent|36|r1.00_a0.05|s64,False,32767,False,608,-2155,349
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,39,aime|edit_ent|39|r1.00_a0.05|s64,True,21251,True,318,12,12
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,41,aime|edit_ent|41|r1.00_a0.05|s64,False,79,True,0,3,51
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,44,aime|edit_ent|44|r1.00_a0.05|s64,True,24824,True,593,738,738
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,47,aime|edit_ent|47|r1.00_a0.05|s64,False,15904,True,228,16,81
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,49,aime|edit_ent|49|r1.00_a0.05|s64,True,17713,True,303,167,167
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,51,aime|edit_ent|51|r1.00_a0.05|s64,False,20168,True,297,334,363
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,52,aime|edit_ent|52|r1.00_a0.05|s64,True,18951,True,220,585,585
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,53,aime|edit_ent|53|r1.00_a0.05|s64,True,12060,True,133,250,250
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,54,aime|edit_ent|54|r1.00_a0.05|s64,True,11727,True,160,273,273
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,56,aime|edit_ent|56|r1.00_a0.05|s64,True,31590,True,606,35,35
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,58,aime|edit_ent|58|r1.00_a0.05|s64,True,12601,True,225,24,24
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,60,aime|edit_ent|60|r1.00_a0.05|s64,True,2891,True,93,204,204
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,63,aime|edit_ent|63|r1.00_a0.05|s64,False,32766,False,553,2,385
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,65,aime|edit_ent|65|r1.00_a0.05|s64,True,10863,True,92,104,104
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,66,aime|edit_ent|66|r1.00_a0.05|s64,True,26285,True,312,721,721
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,67,aime|edit_ent|67|r1.00_a0.05|s64,True,6778,True,80,25,25
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,68,aime|edit_ent|68|r1.00_a0.05|s64,True,12082,True,220,809,809
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,69,aime|edit_ent|69|r1.00_a0.05|s64,True,6646,True,121,116,116
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,70,aime|edit_ent|70|r1.00_a0.05|s64,True,29366,True,609,104,104
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,72,aime|edit_ent|72|r1.00_a0.05|s64,True,7613,True,101,540,540
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,73,aime|edit_ent|73|r1.00_a0.05|s64,False,21720,True,388,103,197
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,74,aime|edit_ent|74|r1.00_a0.05|s64,True,17419,True,216,480,480
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,75,aime|edit_ent|75|r1.00_a0.05|s64,True,8761,True,192,73,73
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,77,aime|edit_ent|77|r1.00_a0.05|s64,True,29742,True,558,601,601
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,78,aime|edit_ent|78|r1.00_a0.05|s64,False,32765,False,538,2,23
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,79,aime|edit_ent|79|r1.00_a0.05|s64,True,12173,True,113,321,321
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,80,aime|edit_ent|80|r1.00_a0.05|s64,False,32767,False,584,224,211
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,82,aime|edit_ent|82|r1.00_a0.05|s64,True,11893,True,97,236,236
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,84,aime|edit_ent|84|r1.00_a0.05|s64,True,7353,True,118,33,33
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,85,aime|edit_ent|85|r1.00_a0.05|s64,False,25586,True,458,100,80
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,86,aime|edit_ent|86|r1.00_a0.05|s64,True,8117,True,156,55,55
 steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,87,aime|edit_ent|87|r1.00_a0.05|s64,True,27614,True,477,699,699
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,64,88,aime|edit_ent|88|r1.00_a0.05|s64,False,23656,True,433,13,127
 steer2edit,aime_2022_2024_60q,edit_re,r0.65_a0.05,64,0,aime|edit_re|0|r0.65_a0.05|s64,True,3426,True,132,116,116
 steer2edit,aime_2022_2024_60q,edit_re,r0.65_a0.05,64,1,aime|edit_re|1|r0.65_a0.05|s64,True,4325,True,108,756,756
 steer2edit,aime_2022_2024_60q,edit_re,r0.65_a0.05,64,2,aime|edit_re|2|r0.65_a0.05|s64,False,32766,False,1809,0,150
@@ -2901,6 +2945,345 @@ steer2edit,math500_100q,edit,r1.00_a0.05,64,470,math100|edit|470|r1.00_a0.05|s64
 steer2edit,math500_100q,edit,r1.00_a0.05,64,471,math100|edit|471|r1.00_a0.05|s64,True,694,True,0,84,84
 steer2edit,math500_100q,edit,r1.00_a0.05,64,483,math100|edit|483|r1.00_a0.05|s64,True,3977,True,0,\dfrac{8}{15},\frac{8}{15}
 steer2edit,math500_100q,edit,r1.00_a0.05,64,496,math100|edit|496|r1.00_a0.05|s64,True,1225,True,0,\dfrac{5}{13},\frac{5}{13}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,4,math100|edit_ent|4|r0.65_a0.05|s64,True,2205,True,83,\text{Evelyn},\text{Evelyn}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,5,math100|edit_ent|5|r0.65_a0.05|s64,True,998,True,41,42,42
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,27,math100|edit_ent|27|r0.65_a0.05|s64,True,1008,True,48,78,78
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,28,math100|edit_ent|28|r0.65_a0.05|s64,True,1402,True,31,-2 + 7i,-2 + 7i
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,31,math100|edit_ent|31|r0.65_a0.05|s64,True,717,True,18,11\sqrt{2},11\sqrt2
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,35,math100|edit_ent|35|r0.65_a0.05|s64,True,1132,True,29,3,3
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,45,math100|edit_ent|45|r0.65_a0.05|s64,True,678,True,23,2,2
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,57,math100|edit_ent|57|r0.65_a0.05|s64,True,1045,True,51,16,16
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,58,math100|edit_ent|58|r0.65_a0.05|s64,False,857,True,6,9900,9901
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,65,math100|edit_ent|65|r0.65_a0.05|s64,True,628,True,19,1,1
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,66,math100|edit_ent|66|r0.65_a0.05|s64,True,1887,True,70,x^3 + 3x - 6,x^3+3x-6
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,68,math100|edit_ent|68|r0.65_a0.05|s64,False,9478,True,302,47,46
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,75,math100|edit_ent|75|r0.65_a0.05|s64,True,2607,True,107,\frac{11}{36},\frac{11}{36}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,78,math100|edit_ent|78|r0.65_a0.05|s64,True,3766,True,99,"(-2, 1)","(-2,1)"
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,79,math100|edit_ent|79|r0.65_a0.05|s64,True,768,True,37,2,2
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,84,math100|edit_ent|84|r0.65_a0.05|s64,True,3063,True,113,-1,-1
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,98,math100|edit_ent|98|r0.65_a0.05|s64,True,582,True,41,2k + 2,2k+2
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,101,math100|edit_ent|101|r0.65_a0.05|s64,True,13669,True,230,850,850
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,104,math100|edit_ent|104|r0.65_a0.05|s64,True,8562,True,288,40,40
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,105,math100|edit_ent|105|r0.65_a0.05|s64,True,1697,True,113,29,29
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,111,math100|edit_ent|111|r0.65_a0.05|s64,True,606,True,18,210,210
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,114,math100|edit_ent|114|r0.65_a0.05|s64,True,2143,True,112,-5,-5
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,116,math100|edit_ent|116|r0.65_a0.05|s64,True,1003,True,27,2,2
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,122,math100|edit_ent|122|r0.65_a0.05|s64,True,853,True,34,9,9
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,138,math100|edit_ent|138|r0.65_a0.05|s64,True,5671,True,264,\frac{1}{3},\frac{1}{3}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,140,math100|edit_ent|140|r0.65_a0.05|s64,True,2032,True,31,13,13
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,142,math100|edit_ent|142|r0.65_a0.05|s64,True,3124,True,178,28800,28800
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,145,math100|edit_ent|145|r0.65_a0.05|s64,True,11330,True,308,-2,-2
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,157,math100|edit_ent|157|r0.65_a0.05|s64,True,1657,True,44,\frac{6}{5},\frac65
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,158,math100|edit_ent|158|r0.65_a0.05|s64,True,2163,True,41,2107,2107
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,164,math100|edit_ent|164|r0.65_a0.05|s64,True,4765,True,108,-\sqrt{3},-\sqrt{3}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,165,math100|edit_ent|165|r0.65_a0.05|s64,True,723,True,22,\frac{4}{9},\frac{4}{9}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,169,math100|edit_ent|169|r0.65_a0.05|s64,True,1031,True,25,12,12
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,173,math100|edit_ent|173|r0.65_a0.05|s64,True,3476,True,121,4,4
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,174,math100|edit_ent|174|r0.65_a0.05|s64,True,1389,True,26,2,2
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,181,math100|edit_ent|181|r0.65_a0.05|s64,True,3843,True,101,\dfrac{\sqrt{3}}{3},\frac{\sqrt{3}}{3}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,188,math100|edit_ent|188|r0.65_a0.05|s64,True,6719,True,201,6,6
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,190,math100|edit_ent|190|r0.65_a0.05|s64,True,3523,True,135,\dfrac{13}{18},\frac{13}{18}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,191,math100|edit_ent|191|r0.65_a0.05|s64,True,542,True,17,0,0
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,198,math100|edit_ent|198|r0.65_a0.05|s64,True,1466,True,70,10080,"10,\!080"
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,200,math100|edit_ent|200|r0.65_a0.05|s64,True,1267,True,42,40,40
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,201,math100|edit_ent|201|r0.65_a0.05|s64,True,2502,True,69,66,66
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,202,math100|edit_ent|202|r0.65_a0.05|s64,True,3551,True,188,\dfrac{2}{3},\frac{2}{3}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,205,math100|edit_ent|205|r0.65_a0.05|s64,False,2511,True,78,"
+\begin{pmatrix}
+-2 \\
+-14 \\
+-7
+\end{pmatrix}
+",\begin{pmatrix} -2 \\ -14 \\ -7 \end{pmatrix}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,207,math100|edit_ent|207|r0.65_a0.05|s64,True,661,True,17,28,28
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,209,math100|edit_ent|209|r0.65_a0.05|s64,True,3246,True,29,16,16
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,216,math100|edit_ent|216|r0.65_a0.05|s64,True,1098,True,28,6,6
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,217,math100|edit_ent|217|r0.65_a0.05|s64,True,15493,True,584,11111111100,"11,\! 111,\! 111,\! 100"
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,221,math100|edit_ent|221|r0.65_a0.05|s64,True,2857,True,53,900,900
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,231,math100|edit_ent|231|r0.65_a0.05|s64,True,2191,True,92,10,10
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,239,math100|edit_ent|239|r0.65_a0.05|s64,True,12141,True,474,16,16
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,243,math100|edit_ent|243|r0.65_a0.05|s64,True,874,True,22,3,3
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,244,math100|edit_ent|244|r0.65_a0.05|s64,True,3973,True,181,8,8
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,248,math100|edit_ent|248|r0.65_a0.05|s64,False,4301,True,106,"
+\begin{pmatrix}
+-1 & 0 \\
+0 & -1
+\end{pmatrix}
+",\begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,254,math100|edit_ent|254|r0.65_a0.05|s64,True,1624,True,54,28,28
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,255,math100|edit_ent|255|r0.65_a0.05|s64,True,1004,True,33,\text{E},\text{(E)}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,259,math100|edit_ent|259|r0.65_a0.05|s64,True,647,True,24,22,22
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,268,math100|edit_ent|268|r0.65_a0.05|s64,True,715,True,17,1,1
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,273,math100|edit_ent|273|r0.65_a0.05|s64,True,1080,True,21,1250,1250
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,277,math100|edit_ent|277|r0.65_a0.05|s64,True,1058,True,19,\sqrt{53},\sqrt{53}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,281,math100|edit_ent|281|r0.65_a0.05|s64,True,3820,True,84,36,36^\circ
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,288,math100|edit_ent|288|r0.65_a0.05|s64,True,4128,True,102,7,7
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,297,math100|edit_ent|297|r0.65_a0.05|s64,True,3099,True,99,103,103
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,299,math100|edit_ent|299|r0.65_a0.05|s64,True,1931,True,39,63,63
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,309,math100|edit_ent|309|r0.65_a0.05|s64,True,3851,True,49,14,14
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,311,math100|edit_ent|311|r0.65_a0.05|s64,True,3762,True,130,3,3
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,317,math100|edit_ent|317|r0.65_a0.05|s64,True,5580,True,201,0,0
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,321,math100|edit_ent|321|r0.65_a0.05|s64,True,1471,True,29,10,10
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,331,math100|edit_ent|331|r0.65_a0.05|s64,True,3489,True,113,\dfrac{13}{6},\frac{13}{6}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,343,math100|edit_ent|343|r0.65_a0.05|s64,True,709,True,24,58500,"58,500"
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,344,math100|edit_ent|344|r0.65_a0.05|s64,True,1058,True,31,5,5
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,348,math100|edit_ent|348|r0.65_a0.05|s64,True,1128,True,22,4495,4495
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,352,math100|edit_ent|352|r0.65_a0.05|s64,True,13971,True,486,11(1 + \sqrt{5}),11 \sqrt{5} + 11
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,353,math100|edit_ent|353|r0.65_a0.05|s64,True,1422,True,44,480,480
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,354,math100|edit_ent|354|r0.65_a0.05|s64,True,1123,True,24,81,81
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,366,math100|edit_ent|366|r0.65_a0.05|s64,True,2899,True,73,4,4
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,368,math100|edit_ent|368|r0.65_a0.05|s64,False,886,True,16,21,31
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,384,math100|edit_ent|384|r0.65_a0.05|s64,False,420,True,9,80,15x - 80
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,386,math100|edit_ent|386|r0.65_a0.05|s64,True,1497,True,51,11,11
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,393,math100|edit_ent|393|r0.65_a0.05|s64,True,959,True,35,\dfrac{3}{4},\frac 34
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,394,math100|edit_ent|394|r0.65_a0.05|s64,True,6087,True,178,-\dfrac{3}{8},-\frac{3}{8}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,407,math100|edit_ent|407|r0.65_a0.05|s64,True,1107,True,32,9,9
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,409,math100|edit_ent|409|r0.65_a0.05|s64,True,5378,True,120,2\sqrt{5},2 \sqrt{5}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,420,math100|edit_ent|420|r0.65_a0.05|s64,False,1231,True,35,"
+\begin{pmatrix}
+\frac{16}{49} \\
+\frac{48}{49} \\
+\frac{24}{49}
+\end{pmatrix}
+",\begin{pmatrix} 16/49 \\ 48/49 \\ 24/49 \end{pmatrix}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,426,math100|edit_ent|426|r0.65_a0.05|s64,True,1709,True,86,6\sqrt{2},6\sqrt{2}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,428,math100|edit_ent|428|r0.65_a0.05|s64,True,15275,True,398,64,64
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,434,math100|edit_ent|434|r0.65_a0.05|s64,True,2055,True,87,32,32
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,436,math100|edit_ent|436|r0.65_a0.05|s64,True,3321,True,84,4,4
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,441,math100|edit_ent|441|r0.65_a0.05|s64,True,710,True,26,550,550
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,451,math100|edit_ent|451|r0.65_a0.05|s64,True,1947,True,64,\frac{639}{40},\frac{639}{40}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,452,math100|edit_ent|452|r0.65_a0.05|s64,True,1224,True,58,143,143
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,453,math100|edit_ent|453|r0.65_a0.05|s64,True,1401,True,29,10,10
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,456,math100|edit_ent|456|r0.65_a0.05|s64,True,4154,True,69,"1, -2","-2,1"
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,458,math100|edit_ent|458|r0.65_a0.05|s64,True,2679,True,88,41,41
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,460,math100|edit_ent|460|r0.65_a0.05|s64,False,7786,True,357,35,75^\circ
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,469,math100|edit_ent|469|r0.65_a0.05|s64,True,750,True,21,25,25
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,470,math100|edit_ent|470|r0.65_a0.05|s64,True,3958,True,97,27648,27648
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,471,math100|edit_ent|471|r0.65_a0.05|s64,True,624,True,12,84,84
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,483,math100|edit_ent|483|r0.65_a0.05|s64,True,3692,True,106,\frac{8}{15},\frac{8}{15}
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,64,496,math100|edit_ent|496|r0.65_a0.05|s64,True,1572,True,57,\dfrac{5}{13},\frac{5}{13}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,4,math100|edit_ent|4|r0.70_a0.05|s64,True,1299,True,33,\text{Evelyn},\text{Evelyn}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,5,math100|edit_ent|5|r0.70_a0.05|s64,True,835,True,25,42,42
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,27,math100|edit_ent|27|r0.70_a0.05|s64,True,963,True,43,78,78
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,28,math100|edit_ent|28|r0.70_a0.05|s64,True,1148,True,25,-2 + 7i,-2 + 7i
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,31,math100|edit_ent|31|r0.70_a0.05|s64,True,894,True,21,11\sqrt{2},11\sqrt2
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,35,math100|edit_ent|35|r0.70_a0.05|s64,True,1153,True,31,3,3
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,45,math100|edit_ent|45|r0.70_a0.05|s64,True,519,True,21,2,2
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,57,math100|edit_ent|57|r0.70_a0.05|s64,True,958,True,23,16,16
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,58,math100|edit_ent|58|r0.70_a0.05|s64,True,941,True,16,9901,9901
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,65,math100|edit_ent|65|r0.70_a0.05|s64,True,867,True,30,1,1
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,66,math100|edit_ent|66|r0.70_a0.05|s64,True,1678,True,56,x^3 + 3x - 6,x^3+3x-6
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,68,math100|edit_ent|68|r0.70_a0.05|s64,False,7417,True,242,47,46
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,75,math100|edit_ent|75|r0.70_a0.05|s64,True,2030,True,56,\frac{11}{36},\frac{11}{36}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,78,math100|edit_ent|78|r0.70_a0.05|s64,True,3627,True,95,"(-2, 1)","(-2,1)"
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,79,math100|edit_ent|79|r0.70_a0.05|s64,True,669,True,28,2,2
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,84,math100|edit_ent|84|r0.70_a0.05|s64,True,2848,True,81,-1,-1
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,98,math100|edit_ent|98|r0.70_a0.05|s64,True,591,True,17,2k + 2,2k+2
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,101,math100|edit_ent|101|r0.70_a0.05|s64,True,11610,True,274,850,850
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,104,math100|edit_ent|104|r0.70_a0.05|s64,True,8556,True,232,40,40
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,105,math100|edit_ent|105|r0.70_a0.05|s64,True,1618,True,63,29,29
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,111,math100|edit_ent|111|r0.70_a0.05|s64,True,610,True,22,210,210
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,114,math100|edit_ent|114|r0.70_a0.05|s64,True,1899,True,66,-5,-5
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,116,math100|edit_ent|116|r0.70_a0.05|s64,True,627,True,16,2,2
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,122,math100|edit_ent|122|r0.70_a0.05|s64,True,906,True,32,9,9
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,138,math100|edit_ent|138|r0.70_a0.05|s64,False,6390,True,261,\frac{1}{6},\frac{1}{3}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,140,math100|edit_ent|140|r0.70_a0.05|s64,True,2631,True,64,13,13
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,142,math100|edit_ent|142|r0.70_a0.05|s64,True,2414,True,72,28800,28800
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,145,math100|edit_ent|145|r0.70_a0.05|s64,True,10525,True,263,-2,-2
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,157,math100|edit_ent|157|r0.70_a0.05|s64,True,6102,True,121,\dfrac{6}{5},\frac65
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,158,math100|edit_ent|158|r0.70_a0.05|s64,True,1818,True,29,2107,2107
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,164,math100|edit_ent|164|r0.70_a0.05|s64,True,5014,True,96,-\sqrt{3},-\sqrt{3}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,165,math100|edit_ent|165|r0.70_a0.05|s64,True,832,True,42,\frac{4}{9},\frac{4}{9}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,169,math100|edit_ent|169|r0.70_a0.05|s64,True,974,True,25,12,12
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,173,math100|edit_ent|173|r0.70_a0.05|s64,True,6800,True,101,4,4
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,174,math100|edit_ent|174|r0.70_a0.05|s64,True,1537,True,32,2,2
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,181,math100|edit_ent|181|r0.70_a0.05|s64,True,1932,True,68,\dfrac{\sqrt{3}}{3},\frac{\sqrt{3}}{3}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,188,math100|edit_ent|188|r0.70_a0.05|s64,True,5886,True,103,6,6
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,190,math100|edit_ent|190|r0.70_a0.05|s64,True,2615,True,128,\dfrac{13}{18},\frac{13}{18}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,191,math100|edit_ent|191|r0.70_a0.05|s64,True,625,True,23,0,0
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,198,math100|edit_ent|198|r0.70_a0.05|s64,True,1484,True,39,10080,"10,\!080"
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,200,math100|edit_ent|200|r0.70_a0.05|s64,True,4731,True,131,40,40
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,201,math100|edit_ent|201|r0.70_a0.05|s64,True,2305,True,55,66,66
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,202,math100|edit_ent|202|r0.70_a0.05|s64,True,4835,True,181,\dfrac{2}{3},\frac{2}{3}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,205,math100|edit_ent|205|r0.70_a0.05|s64,False,2431,True,41,"
+\begin{pmatrix}
+-2 \\
+-14 \\
+-7
+\end{pmatrix}
+",\begin{pmatrix} -2 \\ -14 \\ -7 \end{pmatrix}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,207,math100|edit_ent|207|r0.70_a0.05|s64,True,545,True,16,28,28
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,209,math100|edit_ent|209|r0.70_a0.05|s64,True,2000,True,28,16,16
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,216,math100|edit_ent|216|r0.70_a0.05|s64,True,993,True,23,6,6
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,217,math100|edit_ent|217|r0.70_a0.05|s64,True,7753,True,144,11111111100,"11,\! 111,\! 111,\! 100"
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,221,math100|edit_ent|221|r0.70_a0.05|s64,True,3472,True,55,900,900
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,231,math100|edit_ent|231|r0.70_a0.05|s64,True,1815,True,71,10,10
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,239,math100|edit_ent|239|r0.70_a0.05|s64,False,27995,True,835,74,16
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,243,math100|edit_ent|243|r0.70_a0.05|s64,True,1004,True,36,3,3
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,244,math100|edit_ent|244|r0.70_a0.05|s64,True,2634,True,78,8,8
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,248,math100|edit_ent|248|r0.70_a0.05|s64,False,7820,True,275,"
+\begin{pmatrix}
+-1 & 0 \\
+-8 & -21
+\end{pmatrix}
+",\begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,254,math100|edit_ent|254|r0.70_a0.05|s64,True,969,True,17,28,28
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,255,math100|edit_ent|255|r0.70_a0.05|s64,True,1106,True,38,E,\text{(E)}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,259,math100|edit_ent|259|r0.70_a0.05|s64,True,655,True,21,22,22
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,268,math100|edit_ent|268|r0.70_a0.05|s64,True,802,True,23,1,1
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,273,math100|edit_ent|273|r0.70_a0.05|s64,True,1493,True,37,1250,1250
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,277,math100|edit_ent|277|r0.70_a0.05|s64,True,1027,True,25,\sqrt{53},\sqrt{53}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,281,math100|edit_ent|281|r0.70_a0.05|s64,True,4456,True,86,36,36^\circ
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,288,math100|edit_ent|288|r0.70_a0.05|s64,True,2948,True,72,7,7
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,297,math100|edit_ent|297|r0.70_a0.05|s64,True,2969,True,100,103,103
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,299,math100|edit_ent|299|r0.70_a0.05|s64,True,2890,True,61,63,63
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,309,math100|edit_ent|309|r0.70_a0.05|s64,True,4061,True,66,14,14
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,311,math100|edit_ent|311|r0.70_a0.05|s64,True,4519,True,93,3,3
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,317,math100|edit_ent|317|r0.70_a0.05|s64,True,4810,True,156,0,0
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,321,math100|edit_ent|321|r0.70_a0.05|s64,True,1154,True,37,10,10
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,331,math100|edit_ent|331|r0.70_a0.05|s64,True,3021,True,78,\dfrac{13}{6},\frac{13}{6}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,343,math100|edit_ent|343|r0.70_a0.05|s64,True,916,True,27,58500,"58,500"
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,344,math100|edit_ent|344|r0.70_a0.05|s64,True,1016,True,37,5,5
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,348,math100|edit_ent|348|r0.70_a0.05|s64,True,1239,True,27,4495,4495
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,352,math100|edit_ent|352|r0.70_a0.05|s64,True,26524,True,886,11(\sqrt{5} + 1),11 \sqrt{5} + 11
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,353,math100|edit_ent|353|r0.70_a0.05|s64,True,2665,True,81,480,480
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,354,math100|edit_ent|354|r0.70_a0.05|s64,True,1283,True,23,81,81
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,366,math100|edit_ent|366|r0.70_a0.05|s64,True,3381,True,111,4,4
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,368,math100|edit_ent|368|r0.70_a0.05|s64,False,1568,True,47,21,31
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,384,math100|edit_ent|384|r0.70_a0.05|s64,False,335,True,7,80,15x - 80
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,386,math100|edit_ent|386|r0.70_a0.05|s64,True,1616,True,33,11,11
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,393,math100|edit_ent|393|r0.70_a0.05|s64,True,1650,True,62,\frac{3}{4},\frac 34
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,394,math100|edit_ent|394|r0.70_a0.05|s64,True,4597,True,119,-\dfrac{3}{8},-\frac{3}{8}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,407,math100|edit_ent|407|r0.70_a0.05|s64,True,1177,True,22,9,9
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,409,math100|edit_ent|409|r0.70_a0.05|s64,True,4462,True,75,2\sqrt{5},2 \sqrt{5}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,420,math100|edit_ent|420|r0.70_a0.05|s64,False,2036,True,40,"
+\begin{pmatrix}
+\dfrac{16}{49} \\
+\dfrac{48}{49} \\
+\dfrac{24}{49}
+\end{pmatrix}
+",\begin{pmatrix} 16/49 \\ 48/49 \\ 24/49 \end{pmatrix}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,426,math100|edit_ent|426|r0.70_a0.05|s64,True,1590,True,65,6\sqrt{2},6\sqrt{2}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,428,math100|edit_ent|428|r0.70_a0.05|s64,False,32767,False,3441,1,64
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,434,math100|edit_ent|434|r0.70_a0.05|s64,True,2137,True,57,32,32
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,436,math100|edit_ent|436|r0.70_a0.05|s64,True,3009,True,64,4,4
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,441,math100|edit_ent|441|r0.70_a0.05|s64,True,641,True,24,550,550
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,451,math100|edit_ent|451|r0.70_a0.05|s64,True,2058,True,86,\frac{639}{40},\frac{639}{40}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,452,math100|edit_ent|452|r0.70_a0.05|s64,True,1256,True,49,143,143
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,453,math100|edit_ent|453|r0.70_a0.05|s64,True,1561,True,33,10,10
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,456,math100|edit_ent|456|r0.70_a0.05|s64,True,3144,True,49,"-2, 1","-2,1"
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,458,math100|edit_ent|458|r0.70_a0.05|s64,True,2395,True,51,41,41
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,460,math100|edit_ent|460|r0.70_a0.05|s64,False,10098,True,654,70,75^\circ
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,469,math100|edit_ent|469|r0.70_a0.05|s64,True,617,True,22,25,25
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,470,math100|edit_ent|470|r0.70_a0.05|s64,True,7399,True,101,27648,27648
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,471,math100|edit_ent|471|r0.70_a0.05|s64,True,689,True,16,84,84
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,483,math100|edit_ent|483|r0.70_a0.05|s64,True,3573,True,122,\dfrac{8}{15},\frac{8}{15}
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,64,496,math100|edit_ent|496|r0.70_a0.05|s64,True,1830,True,55,\dfrac{5}{13},\frac{5}{13}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,4,math100|edit_ent|4|r0.75_a0.05|s64,True,2068,True,59,Evelyn,\text{Evelyn}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,5,math100|edit_ent|5|r0.75_a0.05|s64,True,851,True,22,42,42
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,27,math100|edit_ent|27|r0.75_a0.05|s64,True,969,True,42,78,78
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,28,math100|edit_ent|28|r0.75_a0.05|s64,True,754,True,20,-2 + 7i,-2 + 7i
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,31,math100|edit_ent|31|r0.75_a0.05|s64,True,724,True,18,11\sqrt{2},11\sqrt2
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,35,math100|edit_ent|35|r0.75_a0.05|s64,True,1077,True,32,3,3
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,45,math100|edit_ent|45|r0.75_a0.05|s64,True,825,True,29,2,2
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,57,math100|edit_ent|57|r0.75_a0.05|s64,True,1038,True,31,16,16
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,58,math100|edit_ent|58|r0.75_a0.05|s64,True,791,True,16,9901,9901
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,65,math100|edit_ent|65|r0.75_a0.05|s64,True,736,True,19,1,1
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,66,math100|edit_ent|66|r0.75_a0.05|s64,True,1491,True,41,x^3 + 3x - 6,x^3+3x-6
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,68,math100|edit_ent|68|r0.75_a0.05|s64,False,9096,True,236,47,46
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,75,math100|edit_ent|75|r0.75_a0.05|s64,True,3095,True,82,\dfrac{11}{36},\frac{11}{36}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,78,math100|edit_ent|78|r0.75_a0.05|s64,True,3807,True,111,"(-2, 1)","(-2,1)"
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,79,math100|edit_ent|79|r0.75_a0.05|s64,True,606,True,30,2,2
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,84,math100|edit_ent|84|r0.75_a0.05|s64,True,2835,True,99,-1,-1
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,98,math100|edit_ent|98|r0.75_a0.05|s64,True,569,True,17,2k + 2,2k+2
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,101,math100|edit_ent|101|r0.75_a0.05|s64,True,8111,True,153,850,850
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,104,math100|edit_ent|104|r0.75_a0.05|s64,True,10053,True,206,40,40
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,105,math100|edit_ent|105|r0.75_a0.05|s64,True,1375,True,69,29,29
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,111,math100|edit_ent|111|r0.75_a0.05|s64,True,729,True,23,210,210
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,114,math100|edit_ent|114|r0.75_a0.05|s64,True,2000,True,58,-5,-5
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,116,math100|edit_ent|116|r0.75_a0.05|s64,True,804,True,21,2,2
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,122,math100|edit_ent|122|r0.75_a0.05|s64,True,876,True,32,9,9
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,138,math100|edit_ent|138|r0.75_a0.05|s64,False,6337,True,286,\dfrac{1}{6},\frac{1}{3}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,140,math100|edit_ent|140|r0.75_a0.05|s64,True,2024,True,31,13,13
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,142,math100|edit_ent|142|r0.75_a0.05|s64,False,569,True,12,3,28800
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,145,math100|edit_ent|145|r0.75_a0.05|s64,True,8781,True,205,-2,-2
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,157,math100|edit_ent|157|r0.75_a0.05|s64,True,11138,True,186,\dfrac{6}{5},\frac65
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,158,math100|edit_ent|158|r0.75_a0.05|s64,True,5997,True,228,2107,2107
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,164,math100|edit_ent|164|r0.75_a0.05|s64,True,5293,True,148,-\sqrt{3},-\sqrt{3}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,165,math100|edit_ent|165|r0.75_a0.05|s64,True,998,True,45,\frac{4}{9},\frac{4}{9}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,169,math100|edit_ent|169|r0.75_a0.05|s64,True,979,True,22,12,12
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,173,math100|edit_ent|173|r0.75_a0.05|s64,True,8482,True,108,4,4
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,174,math100|edit_ent|174|r0.75_a0.05|s64,True,1523,True,27,2,2
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,181,math100|edit_ent|181|r0.75_a0.05|s64,True,2344,True,56,\dfrac{\sqrt{3}}{3},\frac{\sqrt{3}}{3}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,188,math100|edit_ent|188|r0.75_a0.05|s64,True,5924,True,116,6,6
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,190,math100|edit_ent|190|r0.75_a0.05|s64,True,2677,True,142,\dfrac{13}{18},\frac{13}{18}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,191,math100|edit_ent|191|r0.75_a0.05|s64,True,592,True,21,0,0
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,198,math100|edit_ent|198|r0.75_a0.05|s64,True,2014,True,33,10080,"10,\!080"
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,200,math100|edit_ent|200|r0.75_a0.05|s64,True,1493,True,34,40,40
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,201,math100|edit_ent|201|r0.75_a0.05|s64,True,3855,True,89,66,66
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,202,math100|edit_ent|202|r0.75_a0.05|s64,True,2628,True,93,\frac{2}{3},\frac{2}{3}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,205,math100|edit_ent|205|r0.75_a0.05|s64,True,3067,True,49,\begin{pmatrix} -2 \\ -14 \\ -7 \end{pmatrix},\begin{pmatrix} -2 \\ -14 \\ -7 \end{pmatrix}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,207,math100|edit_ent|207|r0.75_a0.05|s64,True,545,True,16,28,28
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,209,math100|edit_ent|209|r0.75_a0.05|s64,True,1898,True,21,16,16
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,216,math100|edit_ent|216|r0.75_a0.05|s64,True,1427,True,72,6,6
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,217,math100|edit_ent|217|r0.75_a0.05|s64,True,9413,True,166,11111111100,"11,\! 111,\! 111,\! 100"
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,221,math100|edit_ent|221|r0.75_a0.05|s64,True,2419,True,46,900,900
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,231,math100|edit_ent|231|r0.75_a0.05|s64,True,1624,True,64,10,10
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,239,math100|edit_ent|239|r0.75_a0.05|s64,True,17678,True,465,16,16
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,243,math100|edit_ent|243|r0.75_a0.05|s64,True,1198,True,36,3,3
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,244,math100|edit_ent|244|r0.75_a0.05|s64,True,3342,True,58,8,8
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,248,math100|edit_ent|248|r0.75_a0.05|s64,False,13502,True,511,"
+\begin{pmatrix}
+0 & 0 \\
+0 & -1
+\end{pmatrix}
+",\begin{pmatrix} -1 & 0 \\ 0 & -1 \end{pmatrix}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,254,math100|edit_ent|254|r0.75_a0.05|s64,False,147,True,1,6,28
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,255,math100|edit_ent|255|r0.75_a0.05|s64,True,1179,True,37,\text{E},\text{(E)}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,259,math100|edit_ent|259|r0.75_a0.05|s64,True,807,True,30,22,22
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,268,math100|edit_ent|268|r0.75_a0.05|s64,True,961,True,20,1,1
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,273,math100|edit_ent|273|r0.75_a0.05|s64,True,945,True,22,1250,1250
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,277,math100|edit_ent|277|r0.75_a0.05|s64,True,1098,True,22,\sqrt{53},\sqrt{53}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,281,math100|edit_ent|281|r0.75_a0.05|s64,True,6035,True,146,36,36^\circ
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,288,math100|edit_ent|288|r0.75_a0.05|s64,True,3221,True,78,7,7
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,297,math100|edit_ent|297|r0.75_a0.05|s64,True,3824,True,97,103,103
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,299,math100|edit_ent|299|r0.75_a0.05|s64,True,2135,True,52,63,63
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,309,math100|edit_ent|309|r0.75_a0.05|s64,True,3488,True,84,14,14
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,311,math100|edit_ent|311|r0.75_a0.05|s64,True,2571,True,84,3,3
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,317,math100|edit_ent|317|r0.75_a0.05|s64,True,3843,True,96,0,0
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,321,math100|edit_ent|321|r0.75_a0.05|s64,True,1193,True,27,10,10
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,331,math100|edit_ent|331|r0.75_a0.05|s64,True,3488,True,69,\dfrac{13}{6},\frac{13}{6}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,343,math100|edit_ent|343|r0.75_a0.05|s64,True,930,True,26,58500,"58,500"
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,344,math100|edit_ent|344|r0.75_a0.05|s64,True,1017,True,34,5,5
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,348,math100|edit_ent|348|r0.75_a0.05|s64,True,1386,True,19,4495,4495
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,352,math100|edit_ent|352|r0.75_a0.05|s64,True,22835,True,459,11(1 + \sqrt{5}),11 \sqrt{5} + 11
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,353,math100|edit_ent|353|r0.75_a0.05|s64,True,1712,True,43,480,480
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,354,math100|edit_ent|354|r0.75_a0.05|s64,True,1309,True,26,81,81
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,366,math100|edit_ent|366|r0.75_a0.05|s64,True,2276,True,49,4,4
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,368,math100|edit_ent|368|r0.75_a0.05|s64,False,1348,True,39,21,31
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,384,math100|edit_ent|384|r0.75_a0.05|s64,True,372,True,12,15x - 80,15x - 80
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,386,math100|edit_ent|386|r0.75_a0.05|s64,True,2141,True,78,11,11
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,393,math100|edit_ent|393|r0.75_a0.05|s64,True,1431,True,53,\frac{3}{4},\frac 34
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,394,math100|edit_ent|394|r0.75_a0.05|s64,True,4364,True,106,-\frac{3}{8},-\frac{3}{8}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,407,math100|edit_ent|407|r0.75_a0.05|s64,True,922,True,25,9,9
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,409,math100|edit_ent|409|r0.75_a0.05|s64,True,5316,True,91,2\sqrt{5},2 \sqrt{5}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,420,math100|edit_ent|420|r0.75_a0.05|s64,False,1147,True,34,\dfrac{8}{7},\begin{pmatrix} 16/49 \\ 48/49 \\ 24/49 \end{pmatrix}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,426,math100|edit_ent|426|r0.75_a0.05|s64,True,1278,True,33,6\sqrt{2},6\sqrt{2}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,428,math100|edit_ent|428|r0.75_a0.05|s64,False,1096,True,28,2,64
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,434,math100|edit_ent|434|r0.75_a0.05|s64,True,1930,True,54,32,32
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,436,math100|edit_ent|436|r0.75_a0.05|s64,True,3058,True,79,4,4
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,441,math100|edit_ent|441|r0.75_a0.05|s64,True,768,True,19,550,550
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,451,math100|edit_ent|451|r0.75_a0.05|s64,True,2241,True,71,\frac{639}{40},\frac{639}{40}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,452,math100|edit_ent|452|r0.75_a0.05|s64,True,1161,True,41,143,143
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,453,math100|edit_ent|453|r0.75_a0.05|s64,True,1313,True,38,10,10
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,456,math100|edit_ent|456|r0.75_a0.05|s64,True,3288,True,50,"1, -2","-2,1"
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,458,math100|edit_ent|458|r0.75_a0.05|s64,True,2948,True,58,41,41
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,460,math100|edit_ent|460|r0.75_a0.05|s64,True,12838,True,568,75,75^\circ
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,469,math100|edit_ent|469|r0.75_a0.05|s64,True,808,True,19,25,25
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,470,math100|edit_ent|470|r0.75_a0.05|s64,True,7315,True,121,27648,27648
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,471,math100|edit_ent|471|r0.75_a0.05|s64,True,702,True,25,84,84
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,483,math100|edit_ent|483|r0.75_a0.05|s64,True,4560,True,82,\dfrac{8}{15},\frac{8}{15}
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,64,496,math100|edit_ent|496|r0.75_a0.05|s64,True,1949,True,43,\dfrac{5}{13},\frac{5}{13}
 steer2edit,math500_100q,edit_ent,r0.80_a0.05,64,4,math100|edit_ent|4|r0.80_a0.05|s64,True,2333,True,69,Evelyn,\text{Evelyn}
 steer2edit,math500_100q,edit_ent,r0.80_a0.05,64,5,math100|edit_ent|5|r0.80_a0.05|s64,True,932,True,27,42,42
 steer2edit,math500_100q,edit_ent,r0.80_a0.05,64,27,math100|edit_ent|27|r0.80_a0.05|s64,True,847,True,29,78,78

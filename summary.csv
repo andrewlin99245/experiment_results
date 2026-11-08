@@ -14,7 +14,7 @@ crest,math500_level5,paper,coef-1,66,134,92,6329.5,0
 steer2edit,aime_2022_2024_60q,edit,r0.70_a0.05,,60,18,14008.1,2
 steer2edit,aime_2022_2024_60q,edit,r0.80_a0.05,,60,30,18123.6,7
 steer2edit,aime_2022_2024_60q,edit,r1.00_a0.05,,60,40,18557.2,11
-steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,,16,12,22069.3,3
+steer2edit,aime_2022_2024_60q,edit_ent,r1.00_a0.05,,60,46,18328.0,6
 steer2edit,aime_2022_2024_60q,edit_re,r0.65_a0.05,,58,20,15928.2,4
 steer2edit,aime_2022_2024_60q,edit_re,r0.80_a0.05,,60,34,17853.6,8
 steer2edit,aime_2022_2024_60q,edit_re,r1.00_a0.05,,60,42,18986.6,10
@@ -28,6 +28,9 @@ steer2edit,math500_100q,edit,r0.75_a0.05,,100,91,2918.0,0
 steer2edit,math500_100q,edit,r0.80_a0.05,,100,92,3106.7,0
 steer2edit,math500_100q,edit,r0.80_a0.20,,100,84,3725.8,0
 steer2edit,math500_100q,edit,r1.00_a0.05,,100,96,3438.9,0
+steer2edit,math500_100q,edit_ent,r0.65_a0.05,,100,92,3014.7,0
+steer2edit,math500_100q,edit_ent,r0.70_a0.05,,100,90,3482.8,1
+steer2edit,math500_100q,edit_ent,r0.75_a0.05,,100,92,3157.3,0
 steer2edit,math500_100q,edit_ent,r0.80_a0.05,,100,97,3215.2,0
 steer2edit,math500_100q,edit_re,r0.50_a0.05,,100,57,4602.9,1
 steer2edit,math500_100q,edit_re,r0.55_a0.05,,100,83,3670.2,0

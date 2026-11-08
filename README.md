@@ -1,6 +1,6 @@
 # Experiment results
 
-Graded runs from re-encoding experiments on CREST and Steer2Edit. Results only, no running code.
+Graded runs from re-encoding experiments on CREST, Steer2Edit and ReflCtrl. Results only, no running code.
 
 Re-encoding replaces steered state in the KV cache with clean state during generation, so steering at one step does not
 carry through every later step.
@@ -17,10 +17,10 @@ carry through every later step.
 | `steer2edit/aime_2022_2024_60q/` | AIME, first 60 of a frozen random order of 2022-2024, seed 64 |
 
 Each `.jsonl.gz` has one JSON record per run, including the generated `text`, `prediction`, `gold` and `correct`.
-Token ID lists were removed to save space. `runs.csv` has 4,302 runs. `uid` identifies a run.
+Token ID lists were removed to save space. ReflCtrl has CSV rows only, no `.jsonl.gz`. `runs.csv` has 18,819 runs. `uid` identifies a run.
 
-`tokens` in the CSVs means `n_gen` for CREST and `reasoning_length` for Steer2Edit, the length metric used in each
-project's readout.
+`tokens` in the CSVs means `n_gen` for CREST and `reasoning_length` for Steer2Edit, and `think_len` for ReflCtrl, the length
+metric used in each project's readout.
 
 ## CREST
 
@@ -89,6 +89,66 @@ Vanilla: 45 / 20,450 / 10.
 | 0.70 | 18 / 14,008 / 2 | | |
 | 0.80 | 30 / 18,124 / 7 | 34 / 17,854 / 8 | |
 | 1.00 | 40 / 18,557 / 11 | 42 / 18,987 / 10 | 46 / 18,328 / 6 |
+
+## ReflCtrl
+
+Model: `deepseek-ai/DeepSeek-R1-Distill-Qwen-1.5B`. GSM8K test (1,319 questions), one seed, same sampling noise in every
+arm. HF bf16 / sdpa token loop, T 0.6, top-p 0.95, token cap 8,192, forced final-answer continuation of at most 1,024 tokens
+when thinking is cut off. Graded with ReflCtrl's `extract_answer` and `math_equal`. Steering adds `lambda * d` to the
+self-attention and MLP outputs of layers 6-21. `tokens` is `think_len`. `hit_eos` is ReflCtrl's `hit_stop`. Cap hits are runs
+with a forced continuation.
+
+- `base`: no steering.
+- `keep`: released ReflCtrl, steered at each `\n\n` token, steered states stay in the cache.
+- `reenc`: `keep`, with each finished step, including its `\n\n`, re-encoded unsteered when the next `\n\n` arrives.
+- `allkeep` / `allreenc`: `keep` / `reenc` with every generated token steered.
+
+In `summary.csv`, `gsm8k_test` has every finished run for each arm and `gsm8k_test_pilot784` has the 784 questions finished by
+all pilot arms. `reenc` at -2.88 has 94 questions; `allkeep` and `allreenc` have 911-932.
+
+### Step steering, 1,319 questions
+
+| Arm | Lambda | Correct | Accuracy | Mean tokens | Median tokens | Cap hits | Steps / answer | Reflect steps / answer | Thinking ended by model |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `base` | 0 | 1,133 | 85.90% | 1,947 | 1,263 | 51 | 50.1 | 14.3 | 96.1% |
+| `keep` | -0.48 | 1,117 | 84.69% | 1,096 | 806 | 4 | 28.2 | 4.3 | 99.7% |
+| `keep` | -0.96 | 1,096 | 83.09% | 879 | 676 | 6 | 25.2 | 2.4 | 99.5% |
+| `keep` | -1.44 | 1,098 | 83.24% | 921 | 639 | 31 | 39.3 | 1.8 | 97.6% |
+| `reenc` | -0.48 | 1,106 | 83.85% | 1,080 | 801 | 7 | 26.8 | 4.2 | 99.5% |
+| `reenc` | -0.96 | 1,089 | 82.56% | 818 | 649 | 7 | 23.0 | 2.0 | 99.5% |
+| `reenc` | -1.44 | 1,088 | 82.49% | 843 | 617 | 25 | 34.6 | 1.5 | 98.1% |
+| `reenc` | -1.92 | 1,011 | 76.65% | 4,573 | 8,192 | 685 | 526.4 | 1.5 | 48.1% |
+
+`reenc` at -2.88, 94 questions: 54 correct (57.45%), mean tokens 7,942, cap hits 90.
+
+Paired `reenc` vs `keep` at the same lambda, 95% bootstrap CI over questions:
+
+| Lambda | Accuracy difference (points) | Only `reenc` / only `keep` correct | Mean token difference |
+|---:|---:|---:|---:|
+| -0.48 | -0.83 [-2.35, +0.61] | 43 / 54 | -16 [-68, +35] |
+| -0.96 | -0.53 [-2.05, +0.99] | 49 / 56 | -60 [-106, -14] |
+| -1.44 | -0.76 [-2.43, +0.84] | 56 / 66 | -79 [-153, -6] |
+
+### All-token pilot, 784 questions
+
+| Arm | Lambda | Correct | Accuracy | Mean tokens | Median tokens | Cap hits |
+|---|---:|---:|---:|---:|---:|---:|
+| `base` | 0 | 683 | 87.12% | 1,838 | 1,233 | 22 |
+| `keep` | -0.48 | 663 | 84.57% | 1,090 | 805 | 2 |
+| `keep` | -0.96 | 658 | 83.93% | 870 | 676 | 4 |
+| `reenc` | -0.48 | 664 | 84.69% | 1,050 | 792 | 4 |
+| `reenc` | -0.96 | 650 | 82.91% | 800 | 642 | 2 |
+| `allkeep` | -0.1 | 662 | 84.44% | 1,542 | 970 | 23 |
+| `allreenc` | -0.1 | 666 | 84.95% | 1,414 | 922 | 15 |
+| `allkeep` | -0.2 | 661 | 84.31% | 1,249 | 842 | 14 |
+| `allreenc` | -0.2 | 670 | 85.46% | 1,144 | 818 | 8 |
+
+Paired `allreenc` vs `allkeep`, 95% bootstrap CI over questions:
+
+| Lambda | Accuracy difference (points) | Only `allreenc` / only `allkeep` correct | Mean token difference |
+|---:|---:|---:|---:|
+| -0.1 | +0.51 [-1.40, +2.55] | 33 / 29 | -129 [-246, -15] |
+| -0.2 | +1.15 [-1.15, +3.44] | 45 / 36 | -105 [-211, -2] |
 
 ## Notes
 

@@ -1,6 +1,6 @@
 # Experiment results
 
-Graded runs from re-encoding experiments on CREST, Steer2Edit and ReflCtrl, and steering variants in multi-turn conversations. Results only, no running code.
+Graded runs from re-encoding experiments on CREST, Steer2Edit and ReflCtrl, and steering variants in multi-turn conversations and long-form writing. Results only, no running code.
 
 Re-encoding replaces steered state in the KV cache with clean state during generation, so steering at one step does not
 carry through every later step.
@@ -17,6 +17,7 @@ carry through every later step.
 | `steer2edit/aime_2022_2024_60q/` | AIME, first 60 of a frozen random order of 2022-2024, seed 64 |
 | `multiturn/summary.csv` | Multi-turn conversations: one row per split, arm and coefficient |
 | `multiturn/turns.csv` | Multi-turn conversations: one row per assistant turn, without generated text |
+| `longbench_write/` | Long-form writing: `summary.csv`, `runs.csv`, `gaps.csv`, `latency.csv` |
 
 Each `.jsonl.gz` has one JSON record per run, including the generated `text`, `prediction`, `gold` and `correct`.
 Token ID lists were removed to save space. ReflCtrl has CSV rows only, no `.jsonl.gz`. `runs.csv` has 62,164 runs. `benchmark` and `uid` together identify a run.
@@ -351,7 +352,7 @@ generated text.
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
 | `base` | 0 | 60 | 0.483 | 0.452 | 0.604 | 0.362 | 0.092 | 84.0 | 46.2 | 0.149 | 278 | 0.140 | 0.000 |
 | `ordinary` | 1 | 60 | 0.521 | 0.424 | 0.617 | 0.358 | 0.062 | 82.8 | 47.4 | 0.171 | 262 | 0.096 | 0.038 |
-| `ordinary` | 2 | 60 | 0.558 | 0.434 | 0.575 | 0.296 | 0.075 | 77.5 | 51.9 | 0.169 | 218 | 0.077 | 0.162 |
+| `ordinary` | 2 | 60 | 0.558 | 0.435 | 0.575 | 0.296 | 0.075 | 77.5 | 51.9 | 0.169 | 218 | 0.077 | 0.162 |
 | `ordinary` | 3 | 60 | 0.600 | 0.471 | 0.521 | 0.292 | 0.042 | 68.2 | 59.9 | 0.170 | 163 | 0.048 | 0.454 |
 | `ordinary` | 4 | 60 | 0.442 | 0.260 | 0.463 | 0.358 | 0.046 | 56.6 | 46.0 | 0.170 | 124 | 0.058 | 1.025 |
 | `restore_kv` | 2 | 60 | 0.542 | 0.431 | 0.575 | 0.350 | 0.054 | 83.1 | 49.5 | 0.157 | 239 | 0.100 | 0.068 |
@@ -361,7 +362,7 @@ generated text.
 | `restore_k` | 3 | 60 | 0.738 | 0.632 | 0.496 | 0.183 | 0.050 | 68.3 | 70.0 | 0.154 | 154 | 0.048 | 0.423 |
 | `restore_k` | 4 | 60 | 0.762 | 0.633 | 0.492 | 0.183 | 0.037 | 59.3 | 71.6 | 0.145 | 121 | 0.048 | 0.748 |
 | `base_attn` | 2 | 60 | 0.529 | 0.466 | 0.558 | 0.300 | 0.121 | 79.3 | 52.3 | 0.161 | 262 | 0.167 | 0.107 |
-| `base_attn` | 3 | 60 | 0.642 | 0.596 | 0.550 | 0.217 | 0.096 | 72.7 | 61.4 | 0.163 | 237 | 0.104 | 0.206 |
+| `base_attn` | 3 | 60 | 0.642 | 0.596 | 0.550 | 0.217 | 0.096 | 72.7 | 61.4 | 0.162 | 237 | 0.104 | 0.206 |
 | `base_attn` | 4 | 60 | 0.617 | 0.591 | 0.467 | 0.229 | 0.121 | 66.5 | 63.3 | 0.184 | 228 | 0.156 | 0.323 |
 | `turn_clean` | 2 | 60 | 0.617 | 0.519 | 0.571 | 0.279 | 0.046 | 77.2 | 57.0 | 0.170 | 211 | 0.062 | 0.176 |
 | `turn_clean` | 3 | 60 | 0.733 | 0.659 | 0.546 | 0.171 | 0.067 | 69.5 | 72.3 | 0.162 | 164 | 0.062 | 0.430 |
@@ -373,12 +374,12 @@ Turn-level correlation of switch to wrong with judged sycophancy: 0.81.
 
 | Arm | c | Conversations | Switch to wrong | Switch, given first answer correct | First-answer accuracy | Final correct | Format failure | Coherence | Judged sycophancy | Repeated 4-grams | Tokens / turn | Truncated | KL |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
-| `base` | 0 | 24 | 0.479 | 0.385 | 0.604 | 0.438 | 0.021 | 85.4 | 46.1 | 0.146 | 273 | 0.162 | 0.000 |
-| `ordinary` | 1 | 24 | 0.500 | 0.371 | 0.625 | 0.365 | 0.042 | 83.8 | 45.4 | 0.173 | 260 | 0.094 | 0.039 |
-| `ordinary` | 2 | 24 | 0.583 | 0.375 | 0.542 | 0.344 | 0.010 | 78.8 | 51.0 | 0.168 | 222 | 0.021 | 0.159 |
+| `base` | 0 | 24 | 0.479 | 0.385 | 0.604 | 0.438 | 0.021 | 85.4 | 46.1 | 0.146 | 273 | 0.161 | 0.000 |
+| `ordinary` | 1 | 24 | 0.500 | 0.372 | 0.625 | 0.365 | 0.042 | 83.8 | 45.4 | 0.173 | 260 | 0.094 | 0.039 |
+| `ordinary` | 2 | 24 | 0.583 | 0.375 | 0.542 | 0.344 | 0.010 | 78.8 | 51.0 | 0.167 | 222 | 0.021 | 0.158 |
 | `ordinary` | 3 | 24 | 0.615 | 0.511 | 0.490 | 0.260 | 0.031 | 66.0 | 56.6 | 0.189 | 159 | 0.021 | 0.475 |
 | `ordinary` | 4 | 24 | 0.406 | 0.295 | 0.438 | 0.354 | 0.000 | 58.2 | 40.9 | 0.159 | 114 | 0.005 | 0.986 |
-| `ordinary` | 5 | 24 | 0.323 | 0.318 | 0.448 | 0.302 | 0.000 | 52.7 | 34.9 | 0.115 | 68 | 0.016 | 1.556 |
+| `ordinary` | 5 | 24 | 0.323 | 0.317 | 0.448 | 0.302 | 0.000 | 52.7 | 34.9 | 0.115 | 68 | 0.016 | 1.556 |
 
 Turn-level correlation of switch to wrong with judged sycophancy: 0.83.
 
@@ -446,6 +447,93 @@ Each cell is first-answer accuracy / switch to wrong.
 | `turn_clean` | 2 | 0.63 / 0.52 | 0.50 / 0.62 | 0.53 / 0.77 | 0.62 / 0.57 |
 | `turn_clean` | 3 | 0.58 / 0.67 | 0.50 / 0.65 | 0.55 / 0.88 | 0.55 / 0.73 |
 | `turn_clean` | 4 | 0.52 / 0.63 | 0.40 / 0.77 | 0.48 / 0.83 | 0.48 / 0.70 |
+
+## Long-form writing (LongBench-Write)
+
+Model: `Qwen/Qwen2.5-7B-Instruct`, bf16, T 0.5, top-p 0.8, shared sampling noise per prompt and seed, token cap 8,192. Steering
+vector: block-19 formal minus informal difference of means. Prompts: the 14 LongBench-Write English prompts with a 1,000-3,000
+word target and no explicit style requirement, split into 4 dev and 10 test. Test uses seed 0. Judge:
+`Qwen/Qwen2.5-32B-Instruct`, blind to arm.
+
+- `base`: no steering.
+- `prompt_formal` / `prompt_informal`: no steering, register requested in the prompt.
+- `ordinary`: steered state stays in the cache.
+- `restore_kv`: the clean reference K/V of every block is committed for each token.
+- `chunk4_kv` / `chunk32_kv`: every 4 / 32 processed tokens are replayed unsteered and their K/V replace the working ones.
+
+Definitions: formality is the mean of judge scores (1-7) on the beginning, middle and end thirds. Quality is LongWriter's S_q, the
+mean of (score - 1) * 25 over six judged dimensions, 0-100. S_l is LongWriter's length score, 0-100. Complete means the run ended
+with EOS before the cap.
+
+`longbench_write/summary.csv` has the test and dev tables at full precision, `runs.csv` has one row per generation without generated
+text (362 generations: feasibility, dev, test), `gaps.csv` has every gap below and per coefficient, and `latency.csv` has the
+latency runs.
+
+### Test, 10 prompts
+
+| Arm | c | Formality | Beginning | Middle | End | Quality | S_l | Words | Complete | Truncated | Repeated 4-grams | Contractions / 100 words | KL |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `base` |  | 5.38 | 5.76 | 5.26 | 5.12 | 66.5 | 48.2 | 1958 | 0.90 | 0.10 | 0.267 | 0.40 | 0.000 |
+| `prompt_formal` |  | 5.57 | 6.22 | 5.29 | 5.20 | 64.0 | 44.3 | 1460 | 0.90 | 0.10 | 0.225 | 0.43 | 0.000 |
+| `prompt_informal` |  | 2.90 | 2.23 | 3.10 | 3.36 | 51.6 | 38.5 | 1479 | 0.90 | 0.10 | 0.207 | 2.59 | 0.000 |
+| `ordinary` | -1 | 2.19 | 2.88 | 1.73 | 1.96 | 21.9 | 33.9 | 4283 | 0.40 | 0.60 | 0.645 | 5.85 | 0.095 |
+| `ordinary` | -0.75 | 3.17 | 4.47 | 2.55 | 2.49 | 35.5 | 47.5 | 4034 | 0.50 | 0.50 | 0.612 | 1.43 | 0.063 |
+| `ordinary` | -0.5 | 4.54 | 5.47 | 4.52 | 3.62 | 47.7 | 45.3 | 2450 | 0.80 | 0.20 | 0.437 | 0.77 | 0.053 |
+| `ordinary` | +1 | 5.98 | 6.21 | 5.63 | 6.10 | 75.2 | 57.2 | 1277 | 1.00 | 0.00 | 0.171 | 0.37 | 0.111 |
+| `ordinary` | +1.5 | 6.49 | 6.56 | 6.38 | 6.53 | 70.9 | 74.4 | 2253 | 1.00 | 0.00 | 0.337 | 0.30 | 0.151 |
+| `ordinary` | +2 | 6.58 | 6.75 | 6.45 | 6.56 | 58.2 | 72.3 | 2536 | 0.80 | 0.20 | 0.453 | 0.19 | 0.196 |
+| `restore_kv` | -1 | 3.61 | 4.54 | 3.10 | 3.19 | 41.4 | 44.4 | 2729 | 0.70 | 0.30 | 0.451 | 1.47 | 0.090 |
+| `restore_kv` | -0.75 | 4.37 | 5.44 | 4.05 | 3.63 | 51.2 | 34.5 | 2497 | 0.60 | 0.40 | 0.495 | 1.16 | 0.036 |
+| `restore_kv` | -0.5 | 4.87 | 5.38 | 4.54 | 4.69 | 54.0 | 39.3 | 1104 | 0.80 | 0.20 | 0.378 | 0.55 | 0.019 |
+| `restore_kv` | +1 | 5.74 | 6.17 | 5.46 | 5.59 | 69.2 | 63.1 | 1986 | 0.90 | 0.10 | 0.264 | 0.35 | 0.043 |
+| `restore_kv` | +1.5 | 6.14 | 6.54 | 5.90 | 5.97 | 66.3 | 66.2 | 1349 | 1.00 | 0.00 | 0.248 | 0.30 | 0.095 |
+| `restore_kv` | +2 | 6.13 | 6.48 | 6.03 | 5.87 | 68.4 | 64.5 | 2099 | 0.90 | 0.10 | 0.309 | 0.51 | 0.128 |
+| `chunk4_kv` | -1 | 3.63 | 4.50 | 3.12 | 3.10 | 40.6 | 41.2 | 2393 | 0.90 | 0.10 | 0.540 | 4.47 | 0.000 |
+| `chunk4_kv` | -0.75 | 3.85 | 5.13 | 3.22 | 3.18 | 44.5 | 64.2 | 1989 | 0.90 | 0.10 | 0.446 | 1.31 | 0.000 |
+| `chunk4_kv` | -0.5 | 4.68 | 5.35 | 4.39 | 4.31 | 52.8 | 64.6 | 2696 | 0.70 | 0.30 | 0.454 | 0.90 | 0.000 |
+| `chunk4_kv` | +1 | 6.03 | 6.36 | 5.83 | 5.92 | 70.2 | 76.8 | 1871 | 1.00 | 0.00 | 0.297 | 0.55 | 0.000 |
+| `chunk4_kv` | +1.5 | 6.17 | 6.37 | 6.00 | 6.14 | 67.8 | 63.7 | 1808 | 0.90 | 0.10 | 0.317 | 0.41 | 0.000 |
+| `chunk4_kv` | +2 | 6.35 | 6.50 | 6.29 | 6.28 | 65.2 | 74.4 | 2261 | 0.80 | 0.20 | 0.395 | 0.19 | 0.000 |
+| `chunk32_kv` | -1 | 2.95 | 3.96 | 2.54 | 2.35 | 25.1 | 33.4 | 3772 | 0.60 | 0.40 | 0.628 | 2.54 | 0.000 |
+| `chunk32_kv` | -0.75 | 3.56 | 4.69 | 3.16 | 2.82 | 39.9 | 41.3 | 3107 | 0.70 | 0.30 | 0.462 | 1.48 | 0.000 |
+| `chunk32_kv` | +2 | 6.27 | 6.43 | 6.10 | 6.27 | 61.5 | 63.9 | 1542 | 1.00 | 0.00 | 0.312 | 0.28 | 0.000 |
+
+`chunk4_kv` at -1 has 1 unscored run, excluded from its formality mean. `chunk32_kv` ran at +2, -0.75 and -1 only.
+
+### Test: gap to the `ordinary` curve at matched achieved formality
+
+Curve: `base` and `ordinary` on each side, linear interpolation. Arm minus curve; 95% bootstrap CI over prompts.
+
+| Metric | Arm | Formal | Informal | Pooled |
+|---|---|---:|---:|---:|
+| Quality | `restore_kv` | -5.25 [-11.89, +1.10] | +1.94 [-4.98, +6.84] | -1.66 [-6.11, +2.59] |
+| Quality | `chunk4_kv` | -5.72 [-13.61, +2.94] | +2.01 [-3.20, +7.13] | -1.86 [-7.58, +4.02] |
+| Quality | `chunk32_kv` | -11.31 [-23.74, +1.23] | -3.21 [-8.24, +2.37] | -7.26 [-14.54, -0.24] |
+| S_l | `restore_kv` | +5.11 [-6.76, +20.55] | -6.86 [-20.52, +6.05] | -0.87 [-10.04, +9.01] |
+| S_l | `chunk4_kv` | +7.38 [-5.41, +20.24] | +10.31 [-1.18, +22.39] | +8.85 [-1.46, +19.10] |
+| S_l | `chunk32_kv` | -2.99 [-18.48, +13.81] | -8.36 [-28.67, +14.55] | -5.68 [-19.01, +8.55] |
+| End-third formality | `restore_kv` | -0.24 [-0.41, -0.04] | +0.32 [+0.07, +0.51] | +0.04 [-0.11, +0.19] |
+| End-third formality | `chunk4_kv` | -0.16 [-0.28, +0.01] | +0.26 [-0.03, +0.52] | +0.05 [-0.14, +0.24] |
+| End-third formality | `chunk32_kv` | -0.07 [-0.28, +0.16] | -0.01 [-0.30, +0.29] | -0.04 [-0.20, +0.15] |
+| Complete | `restore_kv` | -0.05 [-0.20, +0.08] | -0.03 [-0.18, +0.10] | -0.04 [-0.13, +0.04] |
+| Complete | `chunk4_kv` | -0.10 [-0.23, +0.03] | +0.14 [-0.02, +0.30] | +0.02 [-0.09, +0.14] |
+| Complete | `chunk32_kv` | +0.00 [+0.00, +0.12] | +0.12 [-0.18, +0.40] | +0.06 [-0.09, +0.22] |
+
+### Unsteered feasibility, 14 prompts x 2 seeds
+
+28 generations. Truncated at 8,192: 0.11. Below 1/3 of target: 0.14. Below 1/2 of target: 0.21. Mean words / target 1.04. Mean S_l
+56.8. Mean repeated 4-grams 0.269. Quality 67.6. Formality 5.29 (beginning 5.82, middle 5.03, end 5.07).
+
+### Latency
+
+H100, batch 1, 4,096 tokens. `ordinary_ref` is `ordinary` with the reference stream running.
+
+| Arm | ms / token | Peak memory (GB) |
+|---|---:|---:|
+| `base` | 17.59 | 14.54 |
+| `ordinary` | 17.53 | 14.54 |
+| `ordinary_ref` | 35.17 | 14.76 |
+| `restore_kv` | 35.92 | 14.76 |
 
 ## Notes
 

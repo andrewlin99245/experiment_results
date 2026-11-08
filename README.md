@@ -1,6 +1,6 @@
 # Experiment results
 
-Graded runs from re-encoding experiments on CREST, Steer2Edit and ReflCtrl. Results only, no running code.
+Graded runs from re-encoding experiments on CREST, Steer2Edit and ReflCtrl, and steering variants in multi-turn conversations. Results only, no running code.
 
 Re-encoding replaces steered state in the KV cache with clean state during generation, so steering at one step does not
 carry through every later step.
@@ -15,6 +15,8 @@ carry through every later step.
 | `crest/aime_2022_2025/` | `paper` and `k1a2`, seeds 64-66, 120 problems each |
 | `steer2edit/math500_100q/` | Trade-off curve and entropy gate, 100 questions, seed 64 |
 | `steer2edit/aime_2022_2024_60q/` | AIME, first 60 of a frozen random order of 2022-2024, seed 64 |
+| `multiturn/summary.csv` | Multi-turn conversations: one row per split, arm and coefficient |
+| `multiturn/turns.csv` | Multi-turn conversations: one row per assistant turn, without generated text |
 
 Each `.jsonl.gz` has one JSON record per run, including the generated `text`, `prediction`, `gold` and `correct`.
 Token ID lists were removed to save space. ReflCtrl has CSV rows only, no `.jsonl.gz`. `runs.csv` has 62,164 runs. `benchmark` and `uid` together identify a run.
@@ -322,6 +324,128 @@ Paired `first` vs `reenc` at the same lambda, 95% bootstrap CI over questions:
 |---:|---:|---:|---:|
 | -0.48 | +0.00 [-6.67, +6.67] | 9 / 9 | -795 [-1588, +16] |
 | -0.96 | -9.17 [-16.67, -2.50] | 5 / 16 | +1216 [+213, +2232] |
+
+## Multi-turn conversations
+
+Model: `Qwen/Qwen2.5-7B-Instruct`, bf16, greedy, 384-token cap per turn. Steering vector: block-19 sycophancy difference of
+means; user turns unsteered, assistant turns steered. Each conversation has 4 multiple-choice questions (2 MMLU, 2 TruthfulQA,
+from sycophancy-eval `are_you_sure.jsonl`). Each question is followed by a pushback turn naming a random wrong letter, giving
+8 assistant turns. Judge: `Qwen/Qwen2.5-32B-Instruct`, blind to arm, 0-100.
+
+- `base`: no steering.
+- `ordinary`: steered state stays in the cache.
+- `restore_kv`: clean K and V in the cache.
+- `restore_k`: clean K, steered V.
+- `base_attn`: reference attention, steered V.
+- `turn_clean`: `ordinary` within a turn; the cache is reset to the unsteered reference at each turn end.
+
+Definitions: switch to wrong is the rate at which the pushback-turn letter equals the user's wrong letter. Coherence is
+averaged over all turns; judged sycophancy over pushback turns. Tokens are `n_gen`. KL is `mean_kl`.
+
+`multiturn/summary.csv` has every number below at full precision. `multiturn/turns.csv` has one row per assistant turn, without
+generated text.
+
+### Main, 60 conversations
+
+| Arm | c | Conversations | Switch to wrong | Switch, given first answer correct | First-answer accuracy | Final correct | Format failure | Coherence | Judged sycophancy | Repeated 4-grams | Tokens / turn | Truncated | KL |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `base` | 0 | 60 | 0.483 | 0.452 | 0.604 | 0.362 | 0.092 | 84.0 | 46.2 | 0.149 | 278 | 0.140 | 0.000 |
+| `ordinary` | 1 | 60 | 0.521 | 0.424 | 0.617 | 0.358 | 0.062 | 82.8 | 47.4 | 0.171 | 262 | 0.096 | 0.038 |
+| `ordinary` | 2 | 60 | 0.558 | 0.434 | 0.575 | 0.296 | 0.075 | 77.5 | 51.9 | 0.169 | 218 | 0.077 | 0.162 |
+| `ordinary` | 3 | 60 | 0.600 | 0.471 | 0.521 | 0.292 | 0.042 | 68.2 | 59.9 | 0.170 | 163 | 0.048 | 0.454 |
+| `ordinary` | 4 | 60 | 0.442 | 0.260 | 0.463 | 0.358 | 0.046 | 56.6 | 46.0 | 0.170 | 124 | 0.058 | 1.025 |
+| `restore_kv` | 2 | 60 | 0.542 | 0.431 | 0.575 | 0.350 | 0.054 | 83.1 | 49.5 | 0.157 | 239 | 0.100 | 0.068 |
+| `restore_kv` | 3 | 60 | 0.696 | 0.622 | 0.637 | 0.208 | 0.062 | 79.0 | 64.9 | 0.130 | 191 | 0.077 | 0.219 |
+| `restore_kv` | 4 | 60 | 0.696 | 0.659 | 0.546 | 0.204 | 0.062 | 71.1 | 68.1 | 0.127 | 159 | 0.069 | 0.429 |
+| `restore_k` | 2 | 60 | 0.637 | 0.511 | 0.550 | 0.263 | 0.062 | 76.1 | 58.4 | 0.174 | 222 | 0.081 | 0.160 |
+| `restore_k` | 3 | 60 | 0.738 | 0.632 | 0.496 | 0.183 | 0.050 | 68.3 | 70.0 | 0.154 | 154 | 0.048 | 0.423 |
+| `restore_k` | 4 | 60 | 0.762 | 0.633 | 0.492 | 0.183 | 0.037 | 59.3 | 71.6 | 0.145 | 121 | 0.048 | 0.748 |
+| `base_attn` | 2 | 60 | 0.529 | 0.466 | 0.558 | 0.300 | 0.121 | 79.3 | 52.3 | 0.161 | 262 | 0.167 | 0.107 |
+| `base_attn` | 3 | 60 | 0.642 | 0.596 | 0.550 | 0.217 | 0.096 | 72.7 | 61.4 | 0.163 | 237 | 0.104 | 0.206 |
+| `base_attn` | 4 | 60 | 0.617 | 0.591 | 0.467 | 0.229 | 0.121 | 66.5 | 63.3 | 0.184 | 228 | 0.156 | 0.323 |
+| `turn_clean` | 2 | 60 | 0.617 | 0.519 | 0.571 | 0.279 | 0.046 | 77.2 | 57.0 | 0.170 | 211 | 0.062 | 0.176 |
+| `turn_clean` | 3 | 60 | 0.733 | 0.659 | 0.546 | 0.171 | 0.067 | 69.5 | 72.3 | 0.162 | 164 | 0.062 | 0.430 |
+| `turn_clean` | 4 | 60 | 0.733 | 0.611 | 0.471 | 0.200 | 0.046 | 62.9 | 71.3 | 0.161 | 119 | 0.058 | 0.815 |
+
+Turn-level correlation of switch to wrong with judged sycophancy: 0.81.
+
+### Dev, 24 conversations
+
+| Arm | c | Conversations | Switch to wrong | Switch, given first answer correct | First-answer accuracy | Final correct | Format failure | Coherence | Judged sycophancy | Repeated 4-grams | Tokens / turn | Truncated | KL |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| `base` | 0 | 24 | 0.479 | 0.385 | 0.604 | 0.438 | 0.021 | 85.4 | 46.1 | 0.146 | 273 | 0.162 | 0.000 |
+| `ordinary` | 1 | 24 | 0.500 | 0.371 | 0.625 | 0.365 | 0.042 | 83.8 | 45.4 | 0.173 | 260 | 0.094 | 0.039 |
+| `ordinary` | 2 | 24 | 0.583 | 0.375 | 0.542 | 0.344 | 0.010 | 78.8 | 51.0 | 0.168 | 222 | 0.021 | 0.159 |
+| `ordinary` | 3 | 24 | 0.615 | 0.511 | 0.490 | 0.260 | 0.031 | 66.0 | 56.6 | 0.189 | 159 | 0.021 | 0.475 |
+| `ordinary` | 4 | 24 | 0.406 | 0.295 | 0.438 | 0.354 | 0.000 | 58.2 | 40.9 | 0.159 | 114 | 0.005 | 0.986 |
+| `ordinary` | 5 | 24 | 0.323 | 0.318 | 0.448 | 0.302 | 0.000 | 52.7 | 34.9 | 0.115 | 68 | 0.016 | 1.556 |
+
+Turn-level correlation of switch to wrong with judged sycophancy: 0.83.
+
+### Main: gap to the `ordinary` curve at matched judged sycophancy
+
+Curve: `base` and `ordinary` at c 1-4, linear interpolation. 95% bootstrap CI over conversations. n/a: outside the curve's range.
+
+| Arm | c | Judged sycophancy | Coherence gap | Accuracy gap |
+|---|---:|---:|---:|---:|
+| `base_attn` | 2 | 60.0 | 0.529 | 52.3 |
+| `base_attn` | 3 | 60.0 | 0.642 | 61.4 |
+| `base_attn` | 4 | 60.0 | 0.617 | 63.3 |
+| `restore_k` | 2 | 60.0 | 0.637 | 58.4 |
+| `restore_k` | 3 | 60.0 | 0.738 | 70.0 |
+| `restore_k` | 4 | 60.0 | 0.762 | 71.6 |
+| `restore_kv` | 2 | 60.0 | 0.542 | 49.5 |
+| `restore_kv` | 3 | 60.0 | 0.696 | 64.9 |
+| `restore_kv` | 4 | 60.0 | 0.696 | 68.1 |
+| `turn_clean` | 2 | 60.0 | 0.617 | 57.0 |
+| `turn_clean` | 3 | 60.0 | 0.733 | 72.3 |
+| `turn_clean` | 4 | 60.0 | 0.733 | 71.3 |
+| `base_attn` | 2 | 52.3 | +2.2 [-3.5, +19.1] | -0.014 [-0.082, +0.093] |
+| `base_attn` | 3 | 61.4 | n/a | n/a |
+| `base_attn` | 4 | 63.3 | n/a | n/a |
+| `restore_k` | 2 | 58.4 | +6.2 [+0.5, +10.2] | +0.019 [-0.045, +0.077] |
+| `restore_k` | 3 | 70.0 | n/a | n/a |
+| `restore_k` | 4 | 71.6 | n/a | n/a |
+| `restore_kv` | 2 | 49.5 | +2.7 [-1.4, +24.2] | -0.023 [-0.079, +0.117] |
+| `restore_kv` | 3 | 64.9 | n/a | n/a |
+| `restore_kv` | 4 | 68.1 | n/a | n/a |
+| `turn_clean` | 2 | 57.0 | +5.7 [+1.1, +12.0] | +0.030 [-0.022, +0.092] |
+| `turn_clean` | 3 | 72.3 | n/a | n/a |
+| `turn_clean` | 4 | 71.3 | n/a | n/a |
+
+### Main: first-answer accuracy gap to the `ordinary` curve at matched switch rate
+
+Same curve and CI method, using switch to wrong. Arms with n/a in all three columns are omitted.
+
+| Arm | c | Questions 1-4 | Questions 1-2 | Questions 3-4 |
+|---|---:|---:|---:|---:|
+| `base_attn` | 2 | -0.049 [-0.104, +0.066] | +0.142 [-0.067, +0.167] | -0.050 [-0.162, +0.064] |
+| `base_attn` | 4 | n/a | -0.067 [-0.167, +0.044] | n/a |
+| `restore_kv` | 2 | -0.019 [-0.075, +0.074] | -0.005 [-0.086, +0.163] | -0.033 [-0.100, +0.092] |
+
+### Main: by question position
+
+Each cell is first-answer accuracy / switch to wrong.
+
+| Arm | c | Question 1 | Question 2 | Question 3 | Question 4 |
+|---|---:|---:|---:|---:|---:|
+| `base` | 0 | 0.62 / 0.38 | 0.55 / 0.52 | 0.65 / 0.53 | 0.60 / 0.50 |
+| `base_attn` | 2 | 0.65 / 0.45 | 0.52 / 0.50 | 0.50 / 0.63 | 0.57 / 0.53 |
+| `base_attn` | 3 | 0.57 / 0.53 | 0.50 / 0.67 | 0.53 / 0.77 | 0.60 / 0.60 |
+| `base_attn` | 4 | 0.58 / 0.55 | 0.38 / 0.55 | 0.43 / 0.77 | 0.47 / 0.60 |
+| `ordinary` | 1 | 0.63 / 0.43 | 0.57 / 0.55 | 0.58 / 0.60 | 0.68 / 0.50 |
+| `ordinary` | 2 | 0.63 / 0.43 | 0.50 / 0.63 | 0.57 / 0.67 | 0.60 / 0.50 |
+| `ordinary` | 3 | 0.58 / 0.48 | 0.50 / 0.63 | 0.50 / 0.73 | 0.50 / 0.55 |
+| `ordinary` | 4 | 0.52 / 0.45 | 0.37 / 0.50 | 0.52 / 0.40 | 0.45 / 0.42 |
+| `restore_k` | 2 | 0.63 / 0.57 | 0.47 / 0.62 | 0.55 / 0.75 | 0.55 / 0.62 |
+| `restore_k` | 3 | 0.58 / 0.68 | 0.40 / 0.80 | 0.48 / 0.78 | 0.52 / 0.68 |
+| `restore_k` | 4 | 0.50 / 0.72 | 0.40 / 0.73 | 0.53 / 0.92 | 0.53 / 0.68 |
+| `restore_kv` | 2 | 0.63 / 0.48 | 0.52 / 0.55 | 0.52 / 0.63 | 0.63 / 0.50 |
+| `restore_kv` | 3 | 0.60 / 0.62 | 0.55 / 0.68 | 0.60 / 0.83 | 0.80 / 0.65 |
+| `restore_kv` | 4 | 0.53 / 0.57 | 0.48 / 0.72 | 0.58 / 0.82 | 0.58 / 0.68 |
+| `turn_clean` | 2 | 0.63 / 0.52 | 0.50 / 0.62 | 0.53 / 0.77 | 0.62 / 0.57 |
+| `turn_clean` | 3 | 0.58 / 0.67 | 0.50 / 0.65 | 0.55 / 0.88 | 0.55 / 0.73 |
+| `turn_clean` | 4 | 0.52 / 0.63 | 0.40 / 0.77 | 0.48 / 0.83 | 0.48 / 0.70 |
 
 ## Notes
 
